@@ -16,13 +16,13 @@ public class Programmer extends Employee
     }
 
     @Override
-    public double calculateBonus(double lastMonthTurnover)
+    public double calculateBonus(double turnover)
     {
         switch (level) {
             case JUNIOR:
-                return lastMonthTurnover * 2.27 / 100;
+                return turnover * 2.27 / 100;
             case SENIOR:
-                return lastMonthTurnover * 5.32 / 100;
+                return turnover * 5.32 / 100;
             default:
                 throw new IllegalStateException("Programmer level should be " + Arrays.toString(Level.values()));
         }

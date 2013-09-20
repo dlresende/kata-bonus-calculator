@@ -8,8 +8,8 @@ public class Manager extends Employee
     }
 
     @Override
-    public double calculateBonus(double lastMonthTurnover)
+    public double calculateBonus(double turnover)
     {
-        return lastMonthTurnover * 8.5 / 100;
+        return turnover * 8.5 / 100;
     }
 }

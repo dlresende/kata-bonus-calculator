@@ -11,7 +11,7 @@ public class Employee
         this.name = name;
     }
 
-    public double calculateBonus(double lastMonthTurnover)
+    public double calculateBonus(double turnover)
     {
         return 0;
     }
