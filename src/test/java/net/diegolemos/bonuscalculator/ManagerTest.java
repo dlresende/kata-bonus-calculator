@@ -1,4 +1,4 @@
-package net.diegolemos.bonuscalculation;
+package net.diegolemos.bonuscalculator;
 
 import org.junit.Test;
 

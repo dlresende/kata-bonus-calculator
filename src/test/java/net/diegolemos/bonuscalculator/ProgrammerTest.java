@@ -1,8 +1,8 @@
-package net.diegolemos.bonuscalculation;
+package net.diegolemos.bonuscalculator;
 
 import org.junit.Test;
 
-import static net.diegolemos.bonuscalculation.Programmer.Level.*;
+import static net.diegolemos.bonuscalculator.Programmer.Level.*;
 import static org.fest.assertions.Assertions.*;
 
 public class ProgrammerTest

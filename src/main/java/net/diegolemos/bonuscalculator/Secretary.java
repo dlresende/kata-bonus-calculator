@@ -1,4 +1,4 @@
-package net.diegolemos.bonuscalculation;
+package net.diegolemos.bonuscalculator;
 
 public class Secretary extends Employee
 {
