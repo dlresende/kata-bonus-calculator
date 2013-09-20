@@ -1,4 +1,4 @@
-package net.diegolemos;
+package net.diegolemos.bonuscalculation;
 
 public class Employee
 {
