@@ -16,9 +16,19 @@ public class Employee
         return 0;
     }
 
+    public String getName() {
+        return name;
+    }
+
     @Override
     public boolean equals(Object object)
     {
         return !(object == null || !(object instanceof Employee)) && (object == this || name.equals(((Employee) object).name));
+    }
+
+    @Override
+    public int hashCode()
+    {
+        return name.hashCode();
     }
 }
