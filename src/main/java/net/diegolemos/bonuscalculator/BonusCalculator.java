@@ -27,7 +27,7 @@ public class BonusCalculator
             leftover -= employeeBonus;
 
             if(employeeBonus > 0.0)
-                out.println(format("Yeah! %s got payed $ %.2f.", employee.getName(), employeeBonus));
+                out.println(format("Yeah! %s received $ %.2f.", employee.getName(), employeeBonus));
             else
                 out.println(format("Oops! %s does not have bonus.", employee.getName()));
         }
