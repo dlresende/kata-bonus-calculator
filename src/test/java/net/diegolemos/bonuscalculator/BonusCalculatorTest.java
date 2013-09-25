@@ -5,9 +5,7 @@ import org.junit.Test;
 import java.util.HashSet;
 import java.util.Set;
 
-import static net.diegolemos.bonuscalculator.Programmer.Level.JUNIOR;
-import static net.diegolemos.bonuscalculator.Programmer.Level.SENIOR;
-import static org.fest.assertions.Assertions.assertThat;
+import static org.fest.assertions.Assertions.*;
 
 public class BonusCalculatorTest
 {
@@ -17,9 +15,9 @@ public class BonusCalculatorTest
         Set<Employee> employees = new HashSet<>();
         employees.add(new Employee("John"));
         employees.add(new Manager("Sara"));
-        employees.add(new Programmer("Joe", JUNIOR));
-        employees.add(new Programmer("Billy", JUNIOR));
-        employees.add(new Programmer("Elisabeth", SENIOR));
+        employees.add(new JuniorProgrammer("Joe"));
+        employees.add(new JuniorProgrammer("Billy"));
+        employees.add(new SeniorProgrammer("Elisabeth"));
         employees.add(new Secretary("Marie"));
         BonusCalculator bonusCalculator = new BonusCalculator(employees);
 
