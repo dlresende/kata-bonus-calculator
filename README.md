@@ -13,4 +13,4 @@ As is, each employee receive a certain amount of bonus. From now on:
 
 ## Motivation
 
-As is, the application uses inheritance to calculate bonus for each employee. Nevertheless, in certain situations, inheritance impose trade offs over design. If we implement the new feature using the existing design, we will face code duplication. The challange consists in finding a new design to accomodate the new feature.
+As is, the application uses inheritance to calculate bonus for each employee. Nevertheless, in certain situations, inheritance impose trade offs over design. If we implement the new feature using the existing design, we will face code duplication. The challenge consists in finding a new design to accommodate the new feature that minimises code duplication.
