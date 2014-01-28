@@ -6,8 +6,6 @@ public class Employee
 
     public Employee(String name)
     {
-        assert name != null : "Employee name should not be null.";
-
         this.name = name;
     }
 
