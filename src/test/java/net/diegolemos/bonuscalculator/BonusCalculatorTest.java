@@ -5,7 +5,7 @@ import org.junit.Test;
 import java.util.HashSet;
 import java.util.Set;
 
-import static org.fest.assertions.Assertions.*;
+import static org.fest.assertions.Assertions.assertThat;
 
 public class BonusCalculatorTest
 {
@@ -15,9 +15,9 @@ public class BonusCalculatorTest
         Set<Employee> employees = new HashSet<>();
         employees.add(new Employee("John"));
         employees.add(new Manager("Sara"));
-        employees.add(new JuniorProgrammer("Joe"));
-        employees.add(new JuniorProgrammer("Billy"));
-        employees.add(new SeniorProgrammer("Elisabeth"));
+        employees.add(new ProgrammerJunior("Joe"));
+        employees.add(new ProgrammerJunior("Billy"));
+        employees.add(new ProgrammerSenior("Elisabeth"));
         employees.add(new Secretary("Marie"));
         BonusCalculator bonusCalculator = new BonusCalculator(employees);
 
