@@ -14,7 +14,8 @@ public class Employee
         return 0;
     }
 
-    public String getName() {
+    @Override
+    public String toString() {
         return name;
     }
 }

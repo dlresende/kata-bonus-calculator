@@ -9,7 +9,7 @@ public class SecretaryTest
     @Test
     public void should_compute_bonus_for_secretary()
     {
-        Secretary patrick = new Secretary("Patrick");
+        Secretary patrick = new Secretary("Patrick", 130);
 
         double bonus = patrick.calculateBonus(50_000.00);
 

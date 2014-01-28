@@ -16,8 +16,7 @@ public class Accountant
 
     public double payEveryone(double turnover)
     {
-        log("Turnover: $ %.2f.", turnover);
-
+        out.println(format("Turnover: $ %.2f.", turnover));
         double leftover = turnover;
 
         for(Employee employee : employees)
@@ -26,18 +25,13 @@ public class Accountant
             leftover -= employeeBonus;
 
             if(employeeBonus > 0.0)
-                log("Yeah! %s received $ %.2f.", employee.getName(), employeeBonus);
+                out.println(format("Yeah! %s got payed $ %.2f.", employee, employeeBonus));
             else
-                log("Oops! %s does not have bonus.", employee.getName());
+                out.println(format("Oops! %s does not have bonus.", employee));
         }
 
-        log("Leftover: $ %.2f.", leftover);
+        out.println(format("Leftover: $ %.2f.", leftover));
 
         return leftover;
-    }
-
-    private void log(String message, Object... params)
-    {
-        out.println(format(message, params));
     }
 }

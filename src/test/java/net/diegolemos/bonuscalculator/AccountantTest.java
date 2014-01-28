@@ -14,11 +14,11 @@ public class AccountantTest
     {
         Set<Employee> employees = new HashSet<>();
         employees.add(new Employee("John"));
-        employees.add(new Manager("Sara"));
-        employees.add(new ProgrammerJunior("Joe"));
-        employees.add(new ProgrammerJunior("Billy"));
-        employees.add(new ProgrammerSenior("Elisabeth"));
-        employees.add(new Secretary("Marie"));
+        employees.add(new Manager("Sara", 10));
+        employees.add(new ProgrammerJunior("Joe", true));
+        employees.add(new ProgrammerJunior("Billy", false));
+        employees.add(new ProgrammerSenior("Elisabeth", true));
+        employees.add(new Secretary("Marie", 130));
         Accountant accountant = new Accountant(employees);
 
         double leftover = accountant.payEveryone(100_000.00);
