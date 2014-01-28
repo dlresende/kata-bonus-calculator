@@ -7,7 +7,7 @@ import java.util.Set;
 
 import static org.fest.assertions.Assertions.assertThat;
 
-public class BonusCalculatorTest
+public class AccountantTest
 {
     @Test
     public void should_pay_everyone()
@@ -19,9 +19,9 @@ public class BonusCalculatorTest
         employees.add(new ProgrammerJunior("Billy"));
         employees.add(new ProgrammerSenior("Elisabeth"));
         employees.add(new Secretary("Marie"));
-        BonusCalculator bonusCalculator = new BonusCalculator(employees);
+        Accountant accountant = new Accountant(employees);
 
-        double leftover = bonusCalculator.payEveryone(100_000.00);
+        double leftover = accountant.payEveryone(100_000.00);
 
         assertThat(leftover).isEqualTo(100_000.00 * (1 - ((8.5 + 2 * 2.27 + 5.32 + 1) / 100)));
     }

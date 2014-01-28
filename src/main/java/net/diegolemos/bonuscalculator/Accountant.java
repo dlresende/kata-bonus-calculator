@@ -5,14 +5,12 @@ import java.util.Set;
 import static java.lang.String.format;
 import static java.lang.System.out;
 
-public class BonusCalculator
+public class Accountant
 {
     private final Set<Employee> employees;
 
-    public BonusCalculator(Set<Employee> employees)
+    public Accountant(Set<Employee> employees)
     {
-        assert employees != null : "Employees should not be null.";
-
         this.employees = employees;
     }
 
