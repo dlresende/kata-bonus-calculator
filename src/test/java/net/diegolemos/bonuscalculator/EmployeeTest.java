@@ -7,7 +7,7 @@ import static org.fest.assertions.Assertions.*;
 public class EmployeeTest
 {
     @Test
-    public void employees_do_not_have_bonus()
+    public void should_compute_bonus_for_employee()
     {
         Employee john = new Employee("John");
 

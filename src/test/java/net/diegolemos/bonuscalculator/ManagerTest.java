@@ -7,7 +7,7 @@ import static org.fest.assertions.Assertions.*;
 public class ManagerTest
 {
     @Test
-    public void manager_have_8_5_percent_of_bonus()
+    public void should_compute_bonus_for_manager()
     {
         Manager bob = new Manager("bob");
 

@@ -7,7 +7,7 @@ import static org.fest.assertions.Assertions.*;
 public class SecretaryTest
 {
     @Test
-    public void secretaries_have_1_percent_over_the_bonus_package()
+    public void should_compute_bonus_for_secretary()
     {
         Secretary patrick = new Secretary("Patrick");
 
