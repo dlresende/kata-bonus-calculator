@@ -15,20 +15,4 @@ public class EmployeeTest
 
         assertThat(bonus).isZero();
     }
-
-    @Test
-    public void test_equality()
-    {
-        assertThat(new Employee("John")).isEqualTo(new Employee("John"));
-        assertThat(new Employee("Mike")).isNotEqualTo(new Employee("John"));
-        assertThat(new Employee("Joe")).isNotEqualTo(new Object());
-    }
-
-    @Test
-    public void test_hashCode()
-    {
-        assertThat(new Employee("Joe").hashCode()).isNotEqualTo(new Employee("John").hashCode());
-        assertThat(new Employee("Sara").hashCode()).isNotEqualTo(new Employee("Billy").hashCode());
-        assertThat(new Employee("Bob").hashCode()).isEqualTo(new Employee("Bob").hashCode());
-    }
 }
