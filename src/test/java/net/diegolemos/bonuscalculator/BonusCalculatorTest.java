@@ -7,7 +7,7 @@ import java.util.Set;
 
 import static org.fest.assertions.Assertions.assertThat;
 
-public class AccountantTest
+public class BonusCalculatorTest
 {
     @Test
     public void should_pay_everyone()
@@ -19,7 +19,7 @@ public class AccountantTest
         employees.add(new ProgrammerJunior("Billy", false));
         employees.add(new ProgrammerSenior("Elisabeth", true));
         employees.add(new Secretary("Marie", 130));
-        Accountant accountant = new Accountant(employees);
+        BonusCalculator accountant = new BonusCalculator(employees);
 
         double leftover = accountant.payEveryone(100_000.00);
 

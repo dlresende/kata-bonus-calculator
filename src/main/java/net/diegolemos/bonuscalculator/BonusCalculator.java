@@ -5,11 +5,11 @@ import java.util.Set;
 import static java.lang.String.format;
 import static java.lang.System.out;
 
-public class Accountant
+public class BonusCalculator
 {
     private final Set<Employee> employees;
 
-    public Accountant(Set<Employee> employees)
+    public BonusCalculator(Set<Employee> employees)
     {
         this.employees = employees;
     }
