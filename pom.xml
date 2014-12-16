@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>net.diegolemos</groupId>
-  <artifactId>bonus-calculator</artifactId>
+  <artifactId>bonus-calculator-kata</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <packaging>jar</packaging>
