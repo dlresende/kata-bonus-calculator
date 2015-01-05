@@ -1,9 +1,8 @@
 package net.diegolemos.bonuscalculator;
 
-import java.util.Set;
-
 import static java.lang.String.format;
-import static java.lang.System.out;
+
+import java.util.Set;
 
 public class BonusCalculator
 {
@@ -16,7 +15,7 @@ public class BonusCalculator
 
     public double payEveryone(double turnover)
     {
-        out.println(format("Turnover: $ %.2f.", turnover));
+        print("Turnover: $ %.2f.", turnover);
         double leftover = turnover;
 
         for(Employee employee : employees)
@@ -25,13 +24,17 @@ public class BonusCalculator
             leftover -= employeeBonus;
 
             if(employeeBonus > 0.0)
-                out.println(format("Yeah! %s got payed $ %.2f.", employee, employeeBonus));
+            	print("Yeah! %s got payed $ %.2f.", employee, employeeBonus);
             else
-                out.println(format("Oops! %s does not have bonus.", employee));
+                print("Oops! %s does not have bonus.", employee);
         }
 
-        out.println(format("Leftover: $ %.2f.", leftover));
+        print("Leftover: $ %.2f.", leftover);
 
         return leftover;
     }
+
+	private void print(String template, Object... values) {
+		System.out.println(format(template, values));
+	}
 }
