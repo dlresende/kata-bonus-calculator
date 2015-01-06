@@ -2,17 +2,16 @@ package net.diegolemos.bonuscalculator;
 
 import org.junit.Test;
 
+import static net.diegolemos.bonuscalculator.Bonus.PLUS;
 import static org.fest.assertions.Assertions.assertThat;
 
 public class ProgrammerJuniorTest
 {
-    @Test
-    public void should_compute_bonus_for_junior_programmers()
+	private static final ProgrammerJunior JUNIOR_PROGRAMMER = new ProgrammerJunior("Joe", false);
+
+	@Test
+    public void junior_programmers_should_have_plus_bonus()
     {
-        ProgrammerJunior joe = new ProgrammerJunior("Joe", false);
-
-        double bonus = joe.calculateBonus(1_000_000.00);
-
-        assertThat(bonus).isEqualTo(1_000_000.00 * 2.27 / 100);
+        assertThat(JUNIOR_PROGRAMMER.bonus()).isEqualTo(PLUS);
     }
 }

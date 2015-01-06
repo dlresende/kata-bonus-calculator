@@ -2,17 +2,16 @@ package net.diegolemos.bonuscalculator;
 
 import org.junit.Test;
 
+import static net.diegolemos.bonuscalculator.Bonus.BASE;
 import static org.fest.assertions.Assertions.*;
 
 public class SecretaryTest
 {
-    @Test
-    public void should_compute_bonus_for_secretary()
+	private static final Secretary SECRETARY = new Secretary("Patrick", 130);
+
+	@Test
+    public void secretary_should_have_base_bonus()
     {
-        Secretary patrick = new Secretary("Patrick", 130);
-
-        double bonus = patrick.calculateBonus(50_000.00);
-
-        assertThat(bonus).isEqualTo(50_000.00 * 1 / 100);
+        assertThat(SECRETARY.bonus()).isEqualTo(BASE);
     }
 }

@@ -1,12 +1,14 @@
 package net.diegolemos.bonuscalculator;
 
+import static net.diegolemos.bonuscalculator.Bonus.PREMIUM;
+
 public class ProgrammerSenior extends Employee
 {
     private final boolean knowsCobol;
 
     public ProgrammerSenior(String name, boolean knowsCobol)
     {
-        super(name, 5.32);
+        super(name, PREMIUM);
         this.knowsCobol = knowsCobol;
     }
 

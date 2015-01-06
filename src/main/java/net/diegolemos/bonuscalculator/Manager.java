@@ -1,12 +1,14 @@
 package net.diegolemos.bonuscalculator;
 
+import static net.diegolemos.bonuscalculator.Bonus.PREMIUM;
+
 public class Manager extends Employee
 {
     private int numberOfSubalterns;
 
     public Manager(String name, int numberOfSubalterns)
     {
-        super(name, 8.5);
+        super(name, PREMIUM);
         this.numberOfSubalterns = numberOfSubalterns;
     }
 

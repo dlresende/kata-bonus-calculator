@@ -1,12 +1,14 @@
 package net.diegolemos.bonuscalculator;
 
+import static net.diegolemos.bonuscalculator.Bonus.BASE;
+
 public class Secretary extends Employee
 {
     private final int wordsPerMinute;
 
     public Secretary(String name, int wordsPerMinute)
     {
-        super(name, 1.0);
+        super(name, BASE);
         this.wordsPerMinute = wordsPerMinute;
     }
 

@@ -1,12 +1,14 @@
 package net.diegolemos.bonuscalculator;
 
+import static net.diegolemos.bonuscalculator.Bonus.PLUS;
+
 public class ProgrammerJunior extends Employee
 {
     private final boolean hasReadCleanCode;
 
     public ProgrammerJunior(String name, boolean hasReadCleanCode)
     {
-        super(name, 2.27);
+        super(name, PLUS);
         this.hasReadCleanCode = hasReadCleanCode;
     }
 
