@@ -6,14 +6,8 @@ public class ProgrammerSenior extends Employee
 
     public ProgrammerSenior(String name, boolean knowsCobol)
     {
-        super(name);
+        super(name, 5.32);
         this.knowsCobol = knowsCobol;
-    }
-
-    @Override
-    public double calculateBonus(double turnover)
-    {
-        return turnover * 5.32 / 100;
     }
 
     @Override

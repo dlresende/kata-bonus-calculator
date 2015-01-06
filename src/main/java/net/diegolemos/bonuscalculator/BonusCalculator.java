@@ -12,7 +12,6 @@ public class BonusCalculator
 		return leftover;   
     }
 
-
     private double sumBonuses(double turnover, Employee... employees) {
 		double bonuses = 0.0;
 
@@ -23,7 +22,6 @@ public class BonusCalculator
         
 		return bonuses;
 	}
-
 
 	private double calculateBonus(double turnover, Employee employee) {
 		double employeeBonus = employee.calculateBonus(turnover);

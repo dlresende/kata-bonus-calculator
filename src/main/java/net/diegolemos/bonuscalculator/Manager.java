@@ -6,14 +6,8 @@ public class Manager extends Employee
 
     public Manager(String name, int numberOfSubalterns)
     {
-        super(name);
+        super(name, 8.5);
         this.numberOfSubalterns = numberOfSubalterns;
-    }
-
-    @Override
-    public double calculateBonus(double turnover)
-    {
-        return turnover * 8.5 / 100;
     }
 
     @Override

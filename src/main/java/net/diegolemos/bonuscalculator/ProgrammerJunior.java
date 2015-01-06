@@ -6,14 +6,8 @@ public class ProgrammerJunior extends Employee
 
     public ProgrammerJunior(String name, boolean hasReadCleanCode)
     {
-        super(name);
+        super(name, 2.27);
         this.hasReadCleanCode = hasReadCleanCode;
-    }
-
-    @Override
-    public double calculateBonus(double turnover)
-    {
-        return turnover * 2.27 / 100;
     }
 
     @Override
