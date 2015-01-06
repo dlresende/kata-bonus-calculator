@@ -8,9 +8,9 @@ This exercise aims to apply and understand the The Composite Reuse Principle.
 
 As is, each employee receive a certain amount of bonus. From now on, only 3 bonus categories will exist:
 
-1. Minimum bonus of 1.0 %: for Employees and Secretaries;
-2. Medium bonus of 2.27 %: for Junior programmers;
-3. Maximum bonus of 8.5 %: for Senior programmers and Managers.
+1. BASE: 1.0 % (for Employees and Secretaries);
+2. PLUS: 2.27 % (for Junior programmers);
+3. PREMIUM: 8.5 % (for Senior programmers and Managers).
 
 Try to evolve the application in order to accommodate the new business rules.
 
