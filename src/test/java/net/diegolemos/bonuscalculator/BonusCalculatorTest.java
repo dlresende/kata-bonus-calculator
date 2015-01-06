@@ -6,7 +6,11 @@ import org.junit.Test;
 
 public class BonusCalculatorTest
 {
-    private static final Secretary MARIE = new Secretary("Marie", 130);
+    private static final double BASE = Bonus.BASE.bonusValue();
+	private static final double PLUS = Bonus.PLUS.bonusValue();
+	private static final double PREMIUM = Bonus.PREMIUM.bonusValue();
+    
+	private static final Secretary MARIE = new Secretary("Marie", 130);
     private static final Employee JOHN = new Employee("John");
     private static final Manager SARA = new Manager("Sara", 10);
 	private static final ProgrammerSenior ELIZABETH = new ProgrammerSenior("Elisabeth", true);
@@ -20,6 +24,6 @@ public class BonusCalculatorTest
 
         double leftover = calculator.calculateLeftover(100_000.00, JOHN, SARA, JOE, BILLY, ELIZABETH, MARIE);
 
-        assertThat(leftover).isEqualTo(100_000.00 * (1 - ((2 * 8.5 + 2 * 2.27 + 2 * 1) / 100)));
+        assertThat(leftover).isEqualTo(100_000.00 * (1 - ((2 * PREMIUM + 2 * PLUS + 2 * BASE) / 100)));
     }
 }
